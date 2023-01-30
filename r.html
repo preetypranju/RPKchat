@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Title of the Document</title>
+  </head>
+  <style>
+  .div{
+  border:2px double orange;
+  height:50vh;
+  background-color:orange;
+  width:40vh;
+  align-items:center;
+  text-align:center;
+  border-radius:100px 5px 100px 5px;
+  margin-left:80vh;
+   margin-top:10%;
+   box-shadow:3px 3px 3px 3px gray;
+  }
+  .hr{
+  height:3px;
+  width:28vh;
+  background-color:black;
+  }
+ 
+  .w{
+  
+  height:4vh;
+  
+
+  }
+  .box{
+  height:5vh;
+  width:18vh;
+  background-color:green;
+  color:white;
+  
+  }
+  
+  </style>
+  <body style="background-color:#FFEBCD;">
+  <div class="div">
+  <h1> LOGIN </h1>
+  <hr class="hr"><br>
+    USERNAME:<br>
+    <input type="text" placeholder="Enter Phone or Email " id="inputId" class="w"><br><br>
+	PASSWORD:<br>
+	<input type="password" placeholder="Enter Password " id="inputId1" class="w"><br><br><br>
+    <button type="button" onclick="getInputValue();" class="box" >LOGIN</button>
+	</div>
+    <script>
+      function getInputValue() {
+        // Selecting the input element and get its value 
+        let inputVal = document.getElementById("inputId").value;
+		 let inputVal1 = document.getElementById("inputId1").value;
+        // Displaying the value
+        document.write("your username :",inputVal,"<br>");
+		document.write("your password:",inputVal1);
+      }
+    </script>
+  </body>
+</html>
